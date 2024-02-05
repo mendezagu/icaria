@@ -1,0 +1,51 @@
+.app-custom-button {
+  border: none; /* Elimina el borde de los botones personalizados */
+  transition: box-shadow 0.3s ease; /* Agrega transición al sombreado */
+}
+
+.app-custom-button:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Agrega sombreado al botón en estado hover */
+}
+
+.app-button{
+  color: whitesmoke;
+  width: 500px;
+  height: 50px;
+  border-radius: 10px;
+  background-color: #1B84FF;
+
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+
+
+.app-custom-button:hover {
+  box-shadow: 0 0 10px rgba(179, 41, 41, 0.3); /* Agrega sombreado al botón en estado hover */
+}
+
+.app-custom-button {
+  border: none; /* Elimina el borde de los botones personalizados */
+  transition: box-shadow 0.3s ease; /* Agrega transición al sombreado */
+}
+
+/* Si deseas también quitar el borde de los elementos con la clase cursor-pointer */
+.cursor-pointer {
+  border: none; /* Elimina el borde de los elementos con la clase cursor-pointer */
+}
+
+.small {
+
+  width: 100px;
+}
+
+.medium {
+  width:  250px;
+}
+
+.large {
+  width: 500px ;
+}
+

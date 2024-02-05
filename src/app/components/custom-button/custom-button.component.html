@@ -1,0 +1,8 @@
+<button mat-button class="app-button cursor-pointer"  [class.small]="size === 'small'" [class.medium]="size === 'medium'" [class.large]="size === 'large'">
+    @if (img) {
+    <img src="{{ img }}" alt="imagen">
+  }
+  @if (title ) {
+   {{title}}
+  }
+</button>

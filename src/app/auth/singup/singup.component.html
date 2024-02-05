@@ -1,0 +1,137 @@
+<div class="container">
+  <div class="half left">
+    <form [formGroup]="form" (ngSubmit)="submit()">
+      <div class="title">
+        <h1 style="font-weight: bold">Sign Up</h1>
+        <p class="subtitle">Your Social Campaigns</p>
+      </div>
+
+      <div class="sign-method">
+        <app-custom-button
+          img="/assets/img/google.png"
+          title="Sign in with Google"
+          class="cursor-pointer"
+        ></app-custom-button>
+        <app-custom-button
+          img="/assets/img/icono-apple.png"
+          title="Sign in with Apple"
+        ></app-custom-button>
+      </div>
+
+      <div style="margin-top: 20px"></div>
+      <div>
+        <p style="text-align: center; color: gray">Or with email</p>
+      </div>
+
+      <div>
+        <label
+          for="email"
+          class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+        ></label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          formControlName="email"
+          placeholder="Email"
+          required
+        />
+      </div>
+
+      <div style="margin-top: 30px"></div>
+
+      <div>
+        <label
+          for="password"
+          class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+        ></label>
+        <input
+          type="password"
+          name="password"
+          id="password"
+          formControlName="password"
+          placeholder="Password"
+          required
+        />
+      </div>
+
+
+
+      <br />
+      <div class="password-strength-meter">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
+
+      <div style="margin-top: 10px"></div>
+
+      <p style="color: gray">
+        Use 8 or more characters with a mix of letters, numbers & symbols.
+      </p>
+
+      <div>
+        <label
+          for="password"
+          class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+        ></label>
+        <input
+          type="password"
+          name="password"
+          id="password"
+          formControlName="password"
+          placeholder="Repead Password"
+          required
+        />
+      </div>
+
+      <p style="color: #1b84ff" class="forgot cursor-pointer">
+        ¿Forgot password?
+      </p>
+
+      <app-button style="font-weight: bold" title="Sign Up"></app-button>
+
+      <div style="margin-top: 10px"></div>
+
+      <p class="signUp cursor-pointer">
+        Already have an Account?
+        <span (click)="navigate()" style="color: #1b84ff">Sign In</span>
+      </p>
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <app-footer></app-footer>
+    </form>
+  </div>
+
+  <div class="half right" style="background-color: #1b84ff">
+    <div>
+      <a
+        href="https://preview.keenthemes.com/metronic8/demo1/index.html"
+        target="_blank"
+      >
+        <div>
+          <app-logo style="width: 50px; height: auto"></app-logo>
+        </div>
+      </a>
+    </div>
+    <img
+      class="example-img"
+      src="../../../assets/img/example.png"
+      alt="example"
+    />
+
+    <div class="app-info">
+      <h1 style="font-weight: bold">Fast, Efficient and Productive</h1>
+      <p>
+        In this kind of post, the blogger introduces a person they’ve
+        interviewed and provides some background information about the
+        interviewee and their work following this is a transcript of the
+        interview.
+      </p>
+    </div>
+  </div>
+</div>

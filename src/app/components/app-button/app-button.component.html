@@ -1,0 +1,10 @@
+<button class="app-button" [class.small]="size === 'small'" [class.medium]="size === 'medium'" [class.large]="size === 'large'">
+  @if (title) {
+    {{ title }}
+  }
+  @if (icon) {
+    <span class="material-symbols-outlined">
+      {{ icon }}
+    </span>
+  }
+</button>

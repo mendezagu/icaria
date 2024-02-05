@@ -1,0 +1,27 @@
+<footer style="display: flex; justify-content: space-around; color: #1b84ff">
+  <div class="menu-container cursor-pointer">
+    <div
+      class="menu-toggler cursor-pointer"
+      (click)="toggleMenu()"
+      style="
+        font-size: small;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+      "
+    >
+      English <img src="../../../assets/img/arrow.svg" alt="" />
+    </div>
+    <div class="menu" [class.dropdown-up]="isMenuOpened">
+      @if (isMenuOpened) { @for (item of idiomas ; track item.id) {
+      <div style="display: flex; font-size: small">
+        <p class="menu-item cursor-pointer">{{ item.name }}</p>
+      </div>
+      } }
+    </div>
+  </div>
+
+  <a href="https://preview.keenthemes.com/metronic8/demo1/pages/team.html"target="_blank" class="cursor-pointer" style="text-decoration: none; color: #1b84ff;" >Terms</a>
+  <a href="https://preview.keenthemes.com/metronic8/demo1/pages/pricing/column.html"target="_blank" class="cursor-pointer" style="text-decoration: none; color: #1b84ff;">Plans</a>
+  <a href="https://preview.keenthemes.com/metronic8/demo1/pages/contact.html"target="_blank" class="cursor-pointer" style="text-decoration: none; color: #1b84ff;">Contact Us</a>
+</footer>
